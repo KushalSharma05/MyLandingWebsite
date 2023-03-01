@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 80vh;
+}
+
+/* styling navlist */
+#navlist {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 53px;
+}
+
+/* styling navlist anchor element */
+#navlist a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+/* hover effect of navlist anchor element */
+#navlist a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* styling search bar */
+.search input[type=text] {
+    width: 300px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+    padding-left: 28px;
+}
+
+.search {
+    float: right;
+    margin: 7px;
+}
+
+.container {
+    width: 100%;
+    height: 703px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://img2.goodfon.com/wallpaper/nbig/6/bf/fotoapparat-kamera-r4a-chehol.jpg");
+    background-size: 100% 100%;
+    animation: slider 9s infinite linear;
+    padding-bottom: 121px;
+}
+
+@keyframes slider {
+    0% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://img2.goodfon.com/wallpaper/nbig/6/bf/fotoapparat-kamera-r4a-chehol.jpg");
+    }
+
+    35% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://rare-gallery.com/uploads/posts/1169001-people-women-portrait-sunglasses-glasses-painted-nails-soldier-camera-military-spring-Person-Lomography-cool-photograph-film-vision-care-camera-operator-cinematographer.jpg");
+    }
+
+    75% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://wallpaperaccess.com/full/1209664.jpg");
+    }
+}
+
+.text {
+    font-size: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 114px;
+    color: transparent;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -1726px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor {
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.text h1 {
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 180px 20px 0 20px;
+}
+
+.container1 .heading {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container1 .heading h3 {
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+
+.container1 .heading h3 span {
+    font-weight: 100;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 356px;
+    grid-auto-rows: minmax(200px, auto);
+    grid-auto-columns: minmax(100px, auto);
+}
+
+.flex-all-center {
+    background-color: black;
+    color: white;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
